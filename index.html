@@ -55,21 +55,21 @@
         }
 
         .profile-img {
-            width: 220px;       /* Increased from 150px */
-            height: 220px;      /* Increased from 150px */
+            width: 280px;       /* Increased to 280px */
+            height: 280px;      /* Increased to 280px */
+            max-width: 100%;    /* Keeps it safe on small mobile screens */
             border-radius: 50%;
-            object-fit: cover;  /* Important: prevents stretching */
-            border: 5px solid var(--accent-color); /* Slightly thicker border */
-            box-shadow: 0 0 25px rgba(0, 247, 255, 0.5); /* Stronger, cooler glow */
-            margin-top: 20px;   /* Added space above the image */
-            margin-bottom: 25px; /* Added space below the image */
+            object-fit: cover;  
+            border: 5px solid var(--accent-color); 
+            box-shadow: 0 0 30px rgba(0, 247, 255, 0.6); /* Slightly bigger glow */
+            margin-top: 20px;   
+            margin-bottom: 30px; 
             display: block;
             margin-left: auto;
             margin-right: auto;
-            transition: transform 0.3s ease; /* Smooth animation when hovered */
+            transition: transform 0.3s ease; 
         }
 
-        /* Fun detail: the image spins slightly when you hover over it */
         .profile-img:hover {
             transform: scale(1.03) rotate(3deg);
         }
