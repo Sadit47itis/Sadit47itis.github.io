@@ -55,16 +55,23 @@
         }
 
         .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%; /* Makes it circular */
-            object-fit: cover; /* Ensures the image doesn't stretch */
-            border: 4px solid var(--accent-color); /* Adds a colored border */
-            box-shadow: 0 4px 10px rgba(0, 247, 255, 0.3); /* Subtle blue glow */
-            margin-bottom: 20px;
+            width: 220px;       /* Increased from 150px */
+            height: 220px;      /* Increased from 150px */
+            border-radius: 50%;
+            object-fit: cover;  /* Important: prevents stretching */
+            border: 5px solid var(--accent-color); /* Slightly thicker border */
+            box-shadow: 0 0 25px rgba(0, 247, 255, 0.5); /* Stronger, cooler glow */
+            margin-top: 20px;   /* Added space above the image */
+            margin-bottom: 25px; /* Added space below the image */
             display: block;
             margin-left: auto;
             margin-right: auto;
+            transition: transform 0.3s ease; /* Smooth animation when hovered */
+        }
+
+        /* Fun detail: the image spins slightly when you hover over it */
+        .profile-img:hover {
+            transform: scale(1.03) rotate(3deg);
         }
 
         .typing-svg {
